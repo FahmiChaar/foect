@@ -9,7 +9,7 @@
     "build": "tsc",
     "test": "jest"
   },
-  "repository": "git+https://github.com/unexge/foect.git",
+  "repository": "git+https://github.com/FahmiChaar/foect.git",
   "keywords": [
     "react",
     "react-native",

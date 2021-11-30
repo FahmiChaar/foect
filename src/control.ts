@@ -82,17 +82,17 @@ class Control extends Component<Props, State> {
   get isTouched() { return this.state.touched; }
   get isUntouched() { return !this.isTouched; }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     this.context.form.addControl(this.props.name, this);
   }
 
-  componentDidUpdate(prevProps: Props) {
+  UNSAFE_componentDidUpdate(prevProps: Props) {
     if (isValidationRulesChanged(prevProps, this.props)) {
       this.context.form.validateControl(this.props.name);
     }
   }
 
-  componentWillUnmount() {
+  UNSAFE_componentWillUnmount() {
     this.context.form.removeControl(this.props.name);
   }
 

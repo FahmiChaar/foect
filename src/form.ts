@@ -53,11 +53,11 @@ class Form extends Component<Props, State> {
     this.update = this.update.bind(this);
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     this.mounted = true;
   }
 
-  componentWillUnmount() {
+  UNSAFE_componentWillUnmount() {
     this.mounted = false;
   }
 
